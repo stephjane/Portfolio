@@ -1,0 +1,172 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.top{
+  
+  top:0; right: 0; bottom: 80; left: 0;
+  background-color: rgba(255,255,255,.8);
+  border-radius: 6px;
+  height: 90px;
+
+}
+.name_panel{
+ 
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: rgba(255,255,255,.8);
+  border-radius: 6px;
+}
+.bar{
+  width:900px;
+}
+
+.title{
+  color: #182259;
+  font-size: 80px;
+  font-family: helvetica;
+}
+.panel{
+  background-color: transparent;
+}
+.panel-heading{
+  background-color: transparent;
+}
+
+
+
+.background{
+	background: url(<%= asset_path "black1.jpg"%>);
+	background-size:cover;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+}
+	
+
+
+.web{
+	font-family: helvetica;
+	color: #666666;
+}
+.ux{
+	font-family: helvetica;
+	color: #666666;
+}
+p{
+	font-family: helvetica;
+	font-size: 18px;
+	color: #666666;
+  text-align: left;
+}
+li{
+  text-align: left;
+  font-size: 17px;
+  color: #666666
+}
+.center{
+  text-align: center;
+}
+.navbar-inverse {
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-inverse .navbar-text {
+  color: #080808;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #666666;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #74A588;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #74A588;
+  background-color: #080808;
+}
+
+
+.panel{
+	width: 305px;
+	height: 249px;
+}
+.panel-heading{
+	height: 30px;
+}
+.panel-warning > .panel-heading {
+  color: #666666 ;
+  background-color: white;
+  border-color: transparent;
+}
+.panel-warning {
+  border-color: transparent;
+}
+.panel-warning > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: transparent;
+}
+.btn-warning {
+  color: #ffffff;
+  background-color: rgba(102,102,102,.8);
+  border-color: #666666;
+  border: 2px solid transparent;
+  border-radius: 20px;
+}
+
+.btn-warning:hover {
+  color: #ffffff;
+  background-color: #74A588;
+  border-color: transparent;
+}
+.btn-warning:focus,
+.btn-warning.focus {
+  color: #ffffff;
+  background-color: #74A588;
+  border-color: transparent;
+}
+.footer{
+	vertical-align: baseline
+}
+.modal-lg{
+	width: 1100px; 
+}
+.padding{
+  padding-left: 20px;
+}
+h4{
+  font-family: arial;
+  font-style: bold;
+  font-size: 21px;
+}
+
+
+
+/*dark blue #333366
+light blue #1DA2CF
+light grey #cccccc
+dark green #006633
+turquoise #74A588
+dark grey #666666*/
+/*.panel{
+	background-color: rgba(102,102,102,.5);
+}*/
+/*#accordion{
+	color: #1DA2CF;
+}*/
