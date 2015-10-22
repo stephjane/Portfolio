@@ -6,62 +6,60 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body class="background">
-	<center>
-	<div class="top">
-		<div class="row bar">
-			<div class="col-md-2">
-				<h4><%= link_to image_tag("abouticon.png"), about_path %></h4>
-				<h5>About</h5>
-			</div>
-			<div class="col-md-2">
-				<h4><%= link_to image_tag("projecticon.png"), projects_path %></h4>
-				<h5>Projects</h5>
-			</div>
-			<div class="col-md-4">
-				<h4><%= link_to image_tag("logo2.png"), root_path %></h4>
-			</div>
-			<div class="col-md-2">
-				<h4><%= link_to image_tag("experienceicon.png"), experience_path %></h4>
-				<h5>Experience</h5>
-			</div>
-			<div class="col-md-2">
-				<div class="row">
-					<div class="col-md-12">
-						<a href="mailto:stephjanecz@gmail.com" target="_blank"><%=image_tag('mail.png')%></a>
+<body>
+		<center>
+		<div class="top">
+			<div class="row bar">
+				<div class="col-md-2">
+					<h4><%= link_to image_tag("abouticon.png"), about_path %></h4>
+					<h5>About</h5>
+				</div>
+				<div class="col-md-2">
+					<h4><%= link_to image_tag("projecticon.png"), projects_path %></h4>
+					<h5>Projects</h5>
+				</div>
+				<div class="col-md-4">
+					<h4><%= link_to image_tag("logo2.png"), root_path %></h4>
+				</div>
+				<div class="col-md-2">
+					<h4><%= link_to image_tag("experienceicon.png"), experience_path %></h4>
+					<h5>Experience</h5>
+				</div>
+				<div class="col-md-2">
+					<div class="row">
+						<div class="col-md-12">
+							<a href="mailto:stephjanecz@gmail.com" target="_blank"><%=image_tag('mail.png')%></a>
 
-						<a href="https://www.linkedin.com/in/stephanieczajkowski" target="_blank"><%=image_tag('linkedin.png')%></a>
+							<a href="https://www.linkedin.com/in/stephanieczajkowski" target="_blank"><%=image_tag('linkedin.png')%></a>
+								
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
 							
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
+							<a href="http://uxnfrecks.tumblr.com/" target="_blank"><%=image_tag('tumblr.png')%></a>
 						
-						<a href="http://uxnfrecks.tumblr.com/" target="_blank"><%=image_tag('tumblr.png')%></a>
-					
-					
-						<a href="https://github.com/stephjane" target="_blank"><%=image_tag('github.png')%></a>
+						
+							<a href="https://github.com/stephjane" target="_blank"><%=image_tag('github.png')%></a>
+						</div>
 					</div>
 				</div>
 			</div>
+			<div class="resume-button">
+					<a href="https://drive.google.com/file/d/0B-TZYLQGy9cBUVFfMTdLTE9pbXc/view?usp=sharing" target="_blank"><button class="btn btn-primary">Resume</button></a>
+				</div>
+			</div>
 		</div>
-	</div>
-	</center>
-	<div class="container fluid">
-		<div class="pull-right">
-			<a href="https://drive.google.com/file/d/0B-TZYLQGy9cBUVFfMTdLTE9pbXc/view?usp=sharing" target="_blank"><button class="btn btn-primary">Resume</button></a>
-		</div>
-	</div></br>
+		</center>
 
-	
-	
+		
+		
 
-	<center>
-		<div class="container">
-		<%= yield %>
-		</div>
-	</center>
-
+		<center>
+			<div class="container">
+			<%= yield %>
+			</div>
+		</center>
 
 </body>
 </html>
